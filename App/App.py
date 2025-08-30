@@ -84,10 +84,12 @@ def run():
     role = st.sidebar.selectbox("Select Role", ["User", "Admin"])
 
     if role == "Admin":
+        st.info("💡 Hint: The admin password is 'admin123'")  # Display the prompt/hint
         admin_pass = st.text_input("Enter Admin Password", type="password")
         if st.button("Login as Admin"):
             if admin_pass == "admin123":
                 st.session_state['admin_logged_in'] = True
+                st.success("✅ Logged in successfully!")
             else:
                 st.error("❌ Invalid password!")
 
