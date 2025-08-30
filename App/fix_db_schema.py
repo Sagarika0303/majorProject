@@ -1,7 +1,14 @@
+import os
 import pymysql
 
 def fix_schema():
-    connection = pymysql.connect(host='localhost', user='root', password='1533@sQl', db='cv')
+    connection = pymysql.connect(
+    host=os.environ['DB_HOST'],
+    user=os.environ['DB_USER'],
+    password=os.environ['DB_PASSWORD'],
+    database=os.environ['DB_NAME'],
+    port=int(os.environ.get('DB_PORT', 25524))
+)
     cursor = connection.cursor()
     try:
         cursor.execute("ALTER TABLE applications ADD COLUMN domain VARCHAR(100);")
