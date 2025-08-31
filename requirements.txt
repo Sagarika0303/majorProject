@@ -7,9 +7,6 @@ fuzzywuzzy==0.18.0
 python-Levenshtein==0.23.0
 PyPDF2==3.0.1
 spacy==2.3.5
-spacy-legacy==3.0.10
-spacy-loggers==1.0.3
-spacy==3.7.2
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 matplotlib==3.5.3
 
