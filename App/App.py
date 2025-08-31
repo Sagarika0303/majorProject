@@ -1,5 +1,6 @@
 # ✅ FINAL PATCHED APP.PY (Complete with Admin Pie Charts + LinkedIn Field Prediction + Bonus Videos)
 import setuptools  # ensures distutils fallback is available
+import setuptools._distutils  # ensures distutils fallback exists
 import streamlit as st
 import nltk
 import spacy
