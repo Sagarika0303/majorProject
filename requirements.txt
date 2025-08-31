@@ -2,9 +2,8 @@ pip==24.3.1
 setuptools==70.0.0
 wheel
 packaging
-# Force rich to a compatible version
+streamlit==1.35.0
 rich==13.9.4
-streamlit==1.36.0
 pandas==2.2.2
 numpy==1.26.4
 scikit-learn==1.5.0
