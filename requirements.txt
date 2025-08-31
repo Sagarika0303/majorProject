@@ -1,3 +1,6 @@
+setuptools>=65.0.0
+wheel
+packaging
 streamlit==1.36.0
 rich==13.9.4
 pandas==2.2.2
@@ -10,7 +13,6 @@ PyPDF2==3.0.1
 spacy==2.3.5
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 matplotlib==3.5.3
-
 pyresparser
 streamlit_tags
 pymysql
